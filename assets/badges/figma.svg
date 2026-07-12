@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="140" height="40">
+  <defs>
+    <linearGradient id="badge-figma-glass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="badge-figma-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#F24E1E" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="badge-figma-glow-grad" cx="20%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#F24E1E" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#F24E1E" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <style>
+    .badge-bg {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .badge-bg:hover {
+      fill: rgba(255, 255, 255, 0.06);
+      stroke: #F24E1E;
+      filter: drop-shadow(0 0 6px #F24E1E50);
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #E2E8F0;
+      transition: fill 0.3s;
+    }
+    .badge-bg:hover + text {
+      fill: #FFFFFF;
+    }
+  </style>
+  
+  <!-- Background glow -->
+  <rect x="0" y="0" width="140" height="40" rx="8" fill="url(#badge-figma-glow-grad)" opacity="0.8" pointer-events="none" />
+  
+  <!-- Outer glass panel -->
+  <rect class="badge-bg" x="0.5" y="0.5" width="139" height="39" rx="7.5" fill="url(#badge-figma-glass-grad)" stroke="url(#badge-figma-border-grad)" stroke-width="1" />
+  
+  <!-- Icon Wrapper -->
+  <g transform="translate(14, 10) scale(0.85)">
+    <path fill="#F24E1E" d="M12 2a4 4 0 0 0-4 4 4 4 0 0 0 4 4h4V2h-4z"/><path fill="#A259FF" d="M8 12a4 4 0 0 0 4-4H8v4z"/><path fill="#1ABC9C" d="M12 12a4 4 0 0 0-4 4 4 4 0 0 0 4 4v-8z"/><path fill="#19B5FE" d="M16 12a4 4 0 0 0-4-4v8a4 4 0 0 0 4-4z"/><path fill="#FF7262" d="M8 6a4 4 0 0 0 4 4v-4H8z"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text class="badge-text" x="42" y="25">Figma</text>
+</svg>

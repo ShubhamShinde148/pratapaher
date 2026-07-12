@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 140 40" width="140" height="40">
+  <defs>
+    <linearGradient id="badge-react-glass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="badge-react-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#61DAFB" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="badge-react-glow-grad" cx="20%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#61DAFB" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#61DAFB" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <style>
+    .badge-bg {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .badge-bg:hover {
+      fill: rgba(255, 255, 255, 0.06);
+      stroke: #61DAFB;
+      filter: drop-shadow(0 0 6px #61DAFB50);
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      fill: #E2E8F0;
+      transition: fill 0.3s;
+    }
+    .badge-bg:hover + text {
+      fill: #FFFFFF;
+    }
+  </style>
+  
+  <!-- Background glow -->
+  <rect x="0" y="0" width="140" height="40" rx="8" fill="url(#badge-react-glow-grad)" opacity="0.8" pointer-events="none" />
+  
+  <!-- Outer glass panel -->
+  <rect class="badge-bg" x="0.5" y="0.5" width="139" height="39" rx="7.5" fill="url(#badge-react-glass-grad)" stroke="url(#badge-react-border-grad)" stroke-width="1" />
+  
+  <!-- Icon Wrapper -->
+  <g transform="translate(14, 10) scale(0.85)">
+    <ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(30,12,12)"/><ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(90,12,12)"/><ellipse cx="12" cy="12" rx="11" ry="4.2" fill="none" stroke="#61DAFB" stroke-width="1.2" transform="rotate(150,12,12)"/><circle cx="12" cy="12" r="1.8" fill="#61DAFB"/>
+  </g>
+  
+  <!-- Text Label -->
+  <text class="badge-text" x="42" y="25">React</text>
+</svg>

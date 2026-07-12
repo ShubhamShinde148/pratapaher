@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+  <defs>
+    <linearGradient id="icon-twitter-glass-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.02" />
+    </linearGradient>
+    <linearGradient id="icon-twitter-border-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.15" />
+      <stop offset="50%" stop-color="#1DA1F2" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.05" />
+    </linearGradient>
+    <radialGradient id="icon-twitter-glow-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1DA1F2" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#1DA1F2" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <style>
+    .icon-bg {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .icon-bg:hover {
+      fill: rgba(255, 255, 255, 0.06);
+      stroke: #1DA1F2;
+      filter: drop-shadow(0 0 6px #1DA1F250);
+    }
+    .icon-symbol {
+      transition: transform 0.3s;
+    }
+    .icon-bg:hover + .icon-symbol {
+      transform: scale(1.1);
+    }
+  </style>
+
+  <!-- Background glow -->
+  <circle cx="20" cy="20" r="19" fill="url(#icon-twitter-glow-grad)" opacity="0.8" pointer-events="none" />
+
+  <!-- Glass circle button -->
+  <circle class="icon-bg" cx="20" cy="20" r="19.2" fill="url(#icon-twitter-glass-grad)" stroke="url(#icon-twitter-border-grad)" stroke-width="1" />
+
+  <!-- Inner Brand Symbol -->
+  <g class="icon-symbol" transform-origin="20 20" transform="translate(8, 8) scale(1)">
+    <path fill="#1DA1F2" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+  </g>
+</svg>

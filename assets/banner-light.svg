@@ -1,0 +1,378 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-labelledby="banner-light-title">
+  <title id="banner-light-title">Pratap Aher – Creative Developer Portfolio Banner (Light Mode)</title>
+  <defs>
+    <!-- Ambient Radial Glows (Adapted for Light Theme) -->
+    <radialGradient id="rg-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.18"/>
+      <stop offset="60%" stop-color="#7C3AED" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rg-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#0891B2" stop-opacity="0.16"/>
+      <stop offset="60%" stop-color="#0891B2" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0891B2" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="rg-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3B82F6" stop-opacity="0.12"/>
+      <stop offset="60%" stop-color="#3B82F6" stop-opacity="0.03"/>
+      <stop offset="100%" stop-color="#3B82F6" stop-opacity="0"/>
+    </radialGradient>
+    
+    <!-- Cinematic Volumetric Ray Gradients (Light mode) -->
+    <linearGradient id="ray-grad-1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.04" />
+      <stop offset="50%" stop-color="#7C3AED" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0" />
+    </linearGradient>
+    <linearGradient id="ray-grad-2" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.03" />
+      <stop offset="50%" stop-color="#3B82F6" stop-opacity="0.01" />
+      <stop offset="100%" stop-color="#F8FAFC" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Fog/Smoke Gradients (Light mode) -->
+    <radialGradient id="fog-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8B5CF6" stop-opacity="0.08" />
+      <stop offset="70%" stop-color="#8B5CF6" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#8B5CF6" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="fog-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.07" />
+      <stop offset="70%" stop-color="#06B6D4" stop-opacity="0.02" />
+      <stop offset="100%" stop-color="#06B6D4" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Animated Text Fill: PRATAP -->
+    <linearGradient id="lg-top" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#EDE9FE">
+        <animate attributeName="stop-color" values="#EDE9FE;#DBEAFE;#F3E8FF;#EDE9FE" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="40%" stop-color="#7C3AED">
+        <animate attributeName="stop-color" values="#7C3AED;#2563EB;#6D28D9;#7C3AED" dur="7s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#3B0764">
+        <animate attributeName="stop-color" values="#3B0764;#1E3A8A;#2E1065;#3B0764" dur="7s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Animated Text Fill: AHER -->
+    <linearGradient id="lg-bottom" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#CFFAFE">
+        <animate attributeName="stop-color" values="#CFFAFE;#E0E7FF;#ECFEFF;#CFFAFE" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="45%" stop-color="#0891B2">
+        <animate attributeName="stop-color" values="#0891B2;#4338CA;#0E7490;#0891B2" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0C4A6E">
+        <animate attributeName="stop-color" values="#0C4A6E;#1E1B4B;#083344;#0C4A6E" dur="9s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Specular Neon Edge Gradients -->
+    <linearGradient id="lg-stroke-top" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#6D28D9" stop-opacity="0.7"/>
+      <stop offset="30%" stop-color="#7C3AED" stop-opacity="0.95">
+        <animate attributeName="offset" values="0.2;0.8;0.2" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" stop-color="#2563EB" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#4C1D95" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="lg-stroke-bottom" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#0891B2" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#0369A1" stop-opacity="0.95">
+        <animate attributeName="offset" values="0.8;0.2;0.8" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#4338CA" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Grid Floor Fade -->
+    <linearGradient id="lg-grid" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#7C3AED" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#7C3AED" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#0891B2" stop-opacity="0.35"/>
+    </linearGradient>
+
+    <!-- Scanline Sweep Gradient -->
+    <linearGradient id="lg-scan" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#6D28D9" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#6D28D9" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#6D28D9" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- HUD Border Shimmer -->
+    <linearGradient id="lg-shimmer" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#CBD5E1" stop-opacity="0.5"/>
+      <stop offset="42%" stop-color="#7C3AED" stop-opacity="0.7">
+        <animate attributeName="offset" values="0.05;0.95;0.05" dur="3.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#CBD5E1" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="lg-shimmer2" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#CBD5E1" stop-opacity="0.3"/>
+      <stop offset="55%" stop-color="#0891B2" stop-opacity="0.4">
+        <animate attributeName="offset" values="0.9;0.1;0.9" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#CBD5E1" stop-opacity="0.3"/>
+    </linearGradient>
+
+    <!-- Floor Reflection Fade Mask -->
+    <linearGradient id="lg-floor-fade" x1="0" y1="0" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.45"/>
+      <stop offset="25%" stop-color="#000000" stop-opacity="0.2"/>
+      <stop offset="65%" stop-color="#000000" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="m-floor">
+      <rect width="1200" height="600" fill="url(#lg-floor-fade)"/>
+    </mask>
+
+    <!-- Clip Paths -->
+    <clipPath id="cp-floor">
+      <rect x="0" y="360" width="1200" height="240"/>
+    </clipPath>
+
+    <!-- Volumetric Blur Filters -->
+    <filter id="f-atmospheric-fog" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="30"/>
+    </filter>
+    <filter id="f-floor-blur" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+    <filter id="f-glow-purple" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="b1"/>
+      <feGaussianBlur stdDeviation="4"  result="b2"/>
+      <feComponentTransfer in="b1" result="g1"><feFuncA type="linear" slope="0.4"/></feComponentTransfer>
+      <feComponentTransfer in="b2" result="g2"><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode in="g1"/><feMergeNode in="g2"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="f-glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="10" result="b1"/>
+      <feGaussianBlur stdDeviation="3"  result="b2"/>
+      <feComponentTransfer in="b1" result="g1"><feFuncA type="linear" slope="0.45"/></feComponentTransfer>
+      <feComponentTransfer in="b2" result="g2"><feFuncA type="linear" slope="0.3"/></feComponentTransfer>
+      <feMerge><feMergeNode in="g1"/><feMergeNode in="g2"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="f-shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#1E1B4B" flood-opacity="0.25"/>
+    </filter>
+    <filter id="f-bloom-text" x="-10%" y="-30%" width="120%" height="160%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feComponentTransfer in="b" result="g"><feFuncA type="linear" slope="0.25"/></feComponentTransfer>
+      <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- ── 1. BACKGROUND ── -->
+  <rect width="1200" height="600" fill="#F8FAFC"/>
+
+  <!-- ── 2. CINEMATIC ATMOSPHERE (Volumetric fog, rays, mist adapted for light) ── -->
+  <g id="volumetric-atmosphere">
+    <!-- Volumetric light rays passing through (Behind the text) -->
+    <g opacity="0.4">
+      <polygon points="100,-100 450,-100 300,500 0,500" fill="url(#ray-grad-1)">
+        <animateTransform attributeName="transform" type="translate" values="-40,0; 40,0; -40,0" dur="15s" repeatCount="indefinite"/>
+      </polygon>
+      <polygon points="1100,-100 750,-100 900,500 1200,500" fill="url(#ray-grad-2)">
+        <animateTransform attributeName="transform" type="translate" values="50,0; -50,0; 50,0" dur="18s" repeatCount="indefinite"/>
+      </polygon>
+    </g>
+
+    <!-- Volumetric smoke/fog wisps -->
+    <g filter="url(#f-atmospheric-fog)">
+      <!-- Wisp 1: Cyan bottom-left -->
+      <ellipse cx="300" cy="300" rx="250" ry="120" fill="url(#fog-cyan)">
+        <animate attributeName="cx" values="300;360;300" dur="20s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="300;260;300" dur="14s" repeatCount="indefinite"/>
+      </ellipse>
+      <!-- Wisp 2: Purple centre-right -->
+      <ellipse cx="850" cy="250" rx="300" ry="140" fill="url(#fog-purple)">
+        <animate attributeName="cx" values="850;780;850" dur="24s" repeatCount="indefinite"/>
+        <animate attributeName="cy" values="250;290;250" dur="18s" repeatCount="indefinite"/>
+      </ellipse>
+    </g>
+
+    <!-- Fine dust particles (adapted for visibility on light bg) -->
+    <g fill="#475569">
+      <circle cx="200" cy="200" r="1.2" opacity="0.3">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="7s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 15,-20; 0,0" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="950" cy="150" r="1.0" opacity="0.25">
+        <animate attributeName="opacity" values="0.1;0.4;0.1" dur="5s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0; -20,-10; 0,0" dur="10s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="500" cy="180" r="1.5" fill="#7C3AED" opacity="0.25">
+        <animate attributeName="opacity" values="0.05;0.45;0.05" dur="9s" repeatCount="indefinite"/>
+        <animateTransform attributeName="transform" type="translate" values="0,0; 25,-15; 0,0" dur="15s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <!-- ── 3. PERSPECTIVE GRID FLOOR ── -->
+  <g id="grid-floor">
+    <g stroke="url(#lg-grid)" stroke-width="1.2">
+      <line x1="600" y1="360" x2="600"  y2="600"/>
+      <line x1="600" y1="360" x2="450"  y2="600"/>
+      <line x1="600" y1="360" x2="300"  y2="600"/>
+      <line x1="600" y1="360" x2="150"  y2="600"/>
+      <line x1="600" y1="360" x2="0"    y2="600"/>
+      <line x1="600" y1="360" x2="-150" y2="600"/>
+      <line x1="600" y1="360" x2="750"  y2="600"/>
+      <line x1="600" y1="360" x2="900"  y2="600"/>
+      <line x1="600" y1="360" x2="1050" y2="600"/>
+      <line x1="600" y1="360" x2="1200" y2="600"/>
+      <line x1="600" y1="360" x2="1350" y2="600"/>
+    </g>
+    <g clip-path="url(#cp-floor)" stroke="#0891B2" stroke-width="1">
+      <line x1="0" y1="360" x2="1200" y2="360" opacity="0.03">
+        <animate attributeName="y1" values="362;600" dur="4s" repeatCount="indefinite" begin="0s"/>
+        <animate attributeName="y2" values="362;600" dur="4s" repeatCount="indefinite" begin="0s"/>
+        <animate attributeName="opacity" values="0.03;0.6;0.03" dur="4s" repeatCount="indefinite" begin="0s"/>
+      </line>
+      <line x1="0" y1="360" x2="1200" y2="360" opacity="0.03">
+        <animate attributeName="y1" values="362;600" dur="4s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="y2" values="362;600" dur="4s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="opacity" values="0.03;0.6;0.03" dur="4s" repeatCount="indefinite" begin="1s"/>
+      </line>
+      <line x1="0" y1="360" x2="1200" y2="360" opacity="0.03">
+        <animate attributeName="y1" values="362;600" dur="4s" repeatCount="indefinite" begin="2s"/>
+        <animate attributeName="y2" values="362;600" dur="4s" repeatCount="indefinite" begin="2s"/>
+        <animate attributeName="opacity" values="0.03;0.6;0.03" dur="4s" repeatCount="indefinite" begin="2s"/>
+      </line>
+      <line x1="0" y1="360" x2="1200" y2="360" opacity="0.03">
+        <animate attributeName="y1" values="362;600" dur="4s" repeatCount="indefinite" begin="3s"/>
+        <animate attributeName="y2" values="362;600" dur="4s" repeatCount="indefinite" begin="3s"/>
+        <animate attributeName="opacity" values="0.03;0.6;0.03" dur="4s" repeatCount="indefinite" begin="3s"/>
+      </line>
+    </g>
+    <line x1="0" y1="360" x2="1200" y2="360" stroke="#7C3AED" stroke-width="1.8" opacity="0.25">
+      <animate attributeName="opacity" values="0.15;0.35;0.15" dur="3s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ── 4. FOREGROUND DUST / ASH (Drifting over everything, soft contrast) ── -->
+  <g fill="#0891B2" opacity="0.4">
+    <circle cx="350" cy="450" r="1.5">
+      <animate attributeName="cy" values="450;200;450" dur="15s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="cx" values="350;370;350" dur="15s" repeatCount="indefinite" begin="0s"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="15s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <circle cx="850" cy="500" r="2.0" fill="#7C3AED">
+      <animate attributeName="cy" values="500;220;500" dur="13s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="cx" values="850;810;850" dur="13s" repeatCount="indefinite" begin="3s"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="13s" repeatCount="indefinite" begin="3s"/>
+    </circle>
+  </g>
+
+  <!-- ── 5. HUD FRAME ── -->
+  <rect x="30" y="30" width="1140" height="540" rx="16" fill="none" stroke="url(#lg-shimmer)" stroke-width="1.6"/>
+  <rect x="30" y="30" width="1140" height="540" rx="16" fill="none" stroke="url(#lg-shimmer2)" stroke-width="0.8"/>
+  
+  <g fill="#0F172A" fill-opacity="0.1">
+    <rect x="25"  y="25"  width="22" height="3.5"/>
+    <rect x="25"  y="25"  width="3.5" height="22"/>
+    <rect x="1153" y="25"  width="22" height="3.5"/>
+    <rect x="1170" y="25"  width="3.5" height="22"/>
+    <rect x="25"  y="572" width="22" height="3.5"/>
+    <rect x="25"  y="553" width="3.5" height="22"/>
+    <rect x="1153" y="572" width="22" height="3.5"/>
+    <rect x="1170" y="553" width="3.5" height="22"/>
+  </g>
+
+  <!-- Metadata -->
+  <g font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" font-weight="600" fill="#475569" opacity="0.75">
+    <circle cx="50" cy="55" r="5" fill="#FF5F56"/>
+    <circle cx="67" cy="55" r="5" fill="#FFBD2E"/>
+    <circle cx="84" cy="55" r="5" fill="#27C93F"/>
+    <text x="600" y="58" text-anchor="middle" letter-spacing="1.8">&gt; INITIALIZING DEV PROFILE...</text>
+    <text x="1140" y="58" text-anchor="end">SYS_REV: v2.94</text>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" font-weight="700" fill="#334155" letter-spacing="2">
+    <text x="60" y="220" opacity="0.4">// CODE</text>
+    <text x="60" y="258" opacity="0.6">// BUILD</text>
+    <text x="60" y="296" opacity="0.85">// DEPLOY</text>
+    <text x="60" y="334" opacity="0.4">// REPEAT</text>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,monospace" font-size="11" font-weight="700">
+    <text x="1140" y="220" text-anchor="end" fill="#64748B">&gt; STATUS: <tspan fill="#059669">ONLINE</tspan></text>
+    <text x="1140" y="258" text-anchor="end" fill="#64748B">&gt; FOCUS: <tspan fill="#0891B2">IMPACT</tspan></text>
+    <text x="1140" y="296" text-anchor="end" fill="#64748B">&gt; MODE: <tspan fill="#7C3AED">HUSTLE</tspan></text>
+  </g>
+
+  <g font-family="ui-monospace,SFMono-Regular,monospace" font-size="10" fill="#64748B" letter-spacing="1">
+    <text x="60" y="540">GRID_STATUS: ACTIVE</text>
+    <text x="1140" y="540" text-anchor="end">3D_RENDER: VOLUMETRIC_ATMOSPHERE</text>
+  </g>
+
+  <!-- ── 6. 3D TYPOGRAPHY ── -->
+  <g>
+    <animateTransform attributeName="transform" type="translate"
+      values="0,0; 0,-8; 0,0"
+      dur="6s" repeatCount="indefinite" additive="sum" calcMode="spline"
+      keySplines="0.42 0 0.58 1; 0.42 0 0.58 1"/>
+
+    <!-- Reflection -->
+    <g transform="translate(0,715) scale(1,-1)" mask="url(#m-floor)" filter="url(#f-floor-blur)">
+      <text x="600" y="270" dx="-5" dy="12" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="110" font-weight="900" text-anchor="middle" fill="#C4B5FD">PRATAP</text>
+      <text x="600" y="270" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="110" font-weight="900" text-anchor="middle" fill="url(#lg-top)">PRATAP</text>
+      <text x="600" y="380" dx="-4" dy="9" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="65" font-weight="900" text-anchor="middle" letter-spacing="16" fill="#BAE6FD">AHER</text>
+      <text x="600" y="380" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="65" font-weight="900" text-anchor="middle" letter-spacing="16" fill="url(#lg-bottom)">AHER</text>
+    </g>
+
+    <!-- PRATAP Extrusion -->
+    <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="110" font-weight="900" text-anchor="middle">
+      <text x="600" y="270" dx="-6" dy="15" fill="#1E1B4B" opacity="0.18" filter="url(#f-shadow)">PRATAP</text>
+      <text x="600" y="270" dx="-5.5" dy="13.5" fill="#EDE9FE" filter="url(#f-glow-purple)">PRATAP</text>
+      <text x="600" y="270" dx="-5"   dy="12.5" fill="#DDD6FE" />
+      <text x="600" y="270" dx="-4.5" dy="11.5" fill="#C4B5FD" />
+      <text x="600" y="270" dx="-4"   dy="10.5" fill="#A78BFA" />
+      <text x="600" y="270" dx="-3.5" dy="9.5"  fill="#8B5CF6" />
+      <text x="600" y="270" dx="-3"   dy="8.5"  fill="#7C3AED" />
+      <text x="600" y="270" dx="-2.5" dy="7.5"  fill="#6D28D9" />
+      <text x="600" y="270" dx="-2"   dy="6.5"  fill="#5B21B6" />
+      <text x="600" y="270" dx="-1.5" dy="5.5"  fill="#4C1D95" />
+      <text x="600" y="270" dx="-1.2" dy="4.2"  fill="#3B1474" />
+      <text x="600" y="270" dx="-0.8" dy="3"    fill="#2E1065" />
+      <text x="600" y="270" dx="-0.4" dy="1.8"  fill="#1E0A52" />
+      <text x="600" y="270" fill="url(#lg-top)" filter="url(#f-bloom-text)">PRATAP</text>
+      <text x="600" y="270" fill="none" stroke="url(#lg-stroke-top)" stroke-width="1.4" opacity="0.85">PRATAP</text>
+    </g>
+
+    <!-- AHER Extrusion -->
+    <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="65" font-weight="900" text-anchor="middle" letter-spacing="16">
+      <text x="600" y="380" dx="-5" dy="12" fill="#0C4A6E" opacity="0.15" filter="url(#f-shadow)">AHER</text>
+      <text x="600" y="380" dx="-4.5" dy="11" fill="#CFFAFE" filter="url(#f-glow-cyan)">AHER</text>
+      <text x="600" y="380" dx="-4"   dy="10" fill="#A5F3FC" />
+      <text x="600" y="380" dx="-3.5" dy="9"  fill="#67E8F9" />
+      <text x="600" y="380" dx="-3"   dy="8"  fill="#22D3EE" />
+      <text x="600" y="380" dx="-2.5" dy="7"  fill="#06B6D4" />
+      <text x="600" y="380" dx="-2"   dy="6"  fill="#0891B2" />
+      <text x="600" y="380" dx="-1.6" dy="5"  fill="#0E7490" />
+      <text x="600" y="380" dx="-1.2" dy="3.8" fill="#155E75" />
+      <text x="600" y="380" dx="-0.8" dy="2.6" fill="#0C4A6E" />
+      <text x="600" y="380" dx="-0.4" dy="1.4" fill="#083344" />
+      <text x="600" y="380" fill="url(#lg-bottom)" filter="url(#f-bloom-text)">AHER</text>
+      <text x="600" y="380" fill="none" stroke="url(#lg-stroke-bottom)" stroke-width="1.4" opacity="0.85">AHER</text>
+    </g>
+
+    <!-- Accent bar -->
+    <rect x="380" y="420" width="440" height="2.5" fill="url(#lg-stroke-bottom)" filter="url(#f-glow-cyan)">
+      <animate attributeName="opacity" values="0.5;0.9;0.5" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Hexagon indicator -->
+    <g transform="translate(600,443) scale(0.65)">
+      <polygon points="0,-16 14,-8 14,8 0,17 -14,8 -14,-8" fill="none" stroke="#7C3AED" stroke-width="1.2" opacity="0.4">
+        <animateTransform attributeName="transform" type="rotate" values="0;360" dur="10s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.25;0.55;0.25" dur="5s" repeatCount="indefinite"/>
+      </polygon>
+    </g>
+  </g>
+
+  <!-- ── 7. SCANLINE SWEEP ── -->
+  <rect width="1200" height="50" fill="url(#lg-scan)" opacity="0.6">
+    <animate attributeName="y" values="-50;650" dur="5.5s" repeatCount="indefinite"/>
+  </rect>
+</svg>
